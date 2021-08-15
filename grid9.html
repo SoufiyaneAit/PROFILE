@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css grid page 2/grid9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+
+   <section class="showcase">
+    <header>
+      <div class="logo"><h2>SOUF1</h2></div>
+      <nav>
+        <ul class="linko">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+        <button class="open"><i class="fa fa-bars"></i></button>
+    </nav>
+    </header>
+    <video src="../imgs/Pexels Videos 2278095.mp4" autoplay muted loop></video> 
+    <div class="overlay"></div>
+    <div class="text">
+        <h1>THINK THE <span class="special">DESIGN</span></h1>
+        <h2>DESIGN THE THINKING</h2>
+        <a href="#" class="btn">HIRE ME</a>
+    </div>
+    <div class="social-links">
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+    </div>
+   </section>
+   <div class="menu">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">ABOUT</a></li>
+    </ul>
+   </div>
+  <section class="myskills">
+    <h2>MY SKILLS </h2>
+  </section>
+
+  <section class="skills">
+    <div class="skilo">
+        <i class="fas fa-globe-americas fa-2x "></i>
+        <h4>WEB DESIGN</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, at!</p>
+       </div>
+       <div class="skilo">
+        <i class="fas fa-palette  fa-2x "></i>
+        <h4>GRAPHIC DESIGN</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, at!</p>
+       </div>
+       <div class="skilo">
+        <i class="fas fa-poll fa-2x"></i>
+        <h4>ONLINE MARKETING</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, at!</p>
+       </div>
+       <div class="skilo">
+        <i class="fab fa-yoast fa-2x"></i>
+        <h4>SEO</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, at!</p>
+       </div>
+  </section>
+
+
+
+<script>
+     document.querySelector(".open").addEventListener("click",()=>{
+        document.querySelector(".showcase").classList.toggle("active");
+        console.log("clicked")
+    })
+     
+    var text = "DESIGN"
+    i=0
+    function chnging(){
+        document.querySelector(".special").textContent = text.slice(0,i)
+        i++;
+        if(i>text.length-1)
+        {
+            i=0
+        }
+    }
+    setInterval(chnging,700);
+
+</script>
+
+ 
+
+
+
+
+
+
+
+
+</body>
+
+</html>
